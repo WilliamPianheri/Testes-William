@@ -290,8 +290,8 @@
                 	"description": "Moeda da Verba",
                     "example": 1,
                     "type":"number",
-                    "minimum": 1,
-                    "maximum": 99,
+                    "minimum":1,
+                    "maximum":99,
                     "x-totvs":[
                         {
                             "product": "protheus",
@@ -502,7 +502,7 @@
                             "canUpdate": false
                         }                         
                     ]
-                }
+                },
 				"ConsumerName":{
                     "type": "string",
                     "example": "Cliente Nome",
