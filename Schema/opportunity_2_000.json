@@ -502,7 +502,7 @@
                             "canUpdate": false
                         }                         
                     ]
-                },
+                }
 				"ConsumerName":{
                     "type": "string",
                     "example": "Cliente Nome",
