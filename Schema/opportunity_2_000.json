@@ -42,9 +42,6 @@
             "allOf":[
                 {
                     "$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/opportunity/v1/2_000/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/Paging"
-                },
-                {
-                    "$ref":"#/definitions/Opportunity"
                 }
             ]
         },
