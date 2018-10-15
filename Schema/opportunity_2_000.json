@@ -42,6 +42,9 @@
             "allOf":[
                 {
                     "$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/opportunity/v1/2_000/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/Paging"
+                },
+                {
+                    "$ref":"#/definitions/Opportunity"
                 }
             ]
         },
@@ -130,7 +133,7 @@
                 "Review":{
 					"type": "string",
                     "example": "01",
-                    "description": "Revisao da Oportunidade",
+                    "description": "Revisão da Oportunidade",
                     "x-totvs":[
                         {
                             "product": "protheus",
@@ -146,7 +149,7 @@
                 "Description":{
 					"type": "string",
                     "example": "Oportunidade 000001",
-                    "description": "Descricao da Oportunidade",
+                    "description": "Descrição da Oportunidade",
                     "x-totvs":[
                         {
                             "product": "protheus",
@@ -177,7 +180,7 @@
                 },
 				"SellerName":{
 					"type": "string",
-                    "example": "Vemdedor Nome",
+                    "example": "Vendedor Nome",
                     "description": "Nome do Vendedor",
                     "x-totvs":[
                         {
@@ -194,14 +197,10 @@
                 },
 				"ListofConsumer":{
                     "type":"array",
-                    "description":"Informações de Cliente",
-                    "properties":{
-                        "Consumer":{
-                            "type":"array",
-                            "items":{
-                                "$ref":"#/definitions/ConsumerData"
-                            }
-                        }
+                    "description":"Informações do Cliente",
+					"items":{                    
+						"type":"array",
+                        "$ref":"#/definitions/ConsumerData"
                     }
                 },
                 "StartDate":{
@@ -288,7 +287,7 @@
                 },
                 "Currency":{
                 	"description": "Moeda da Verba",
-                    "example": 1,
+                    "example":1,
                     "type":"number",
                     "minimum":1,
                     "maximum":99,
@@ -308,8 +307,7 @@
 					"type": "string",
                     "example": "1",
 					"description":"Prioridade. 1 - Baixa 2 - Media 3 - Alta.",
-					"minimum":1,
-					"maximum":3,
+					"maxlength":1,
 					"enum":[
 						"1",
 						"2",
@@ -330,7 +328,7 @@
 				"SuccessFactor":{
                 	"type": "string",
                     "example": "000001",
-                    "description": "Fator Critico de Sucesso",
+                    "description": "Fator Crítico de Sucesso",
                     "x-totvs":[
                         {
                             "product": "protheus",
@@ -346,7 +344,7 @@
 				"FailureFactor":{
                 	"type": "string",
                     "example": "000001",
-                    "description": "Fator Critico Insucesso",
+                    "description": "Fator Crítico Insucesso",
                     "x-totvs":[
                         {
                             "product": "protheus",
@@ -363,8 +361,7 @@
 					"type": "string",
                     "example": "1",
 					"description":"Status da Oportunidade. 1 - Aberto 2 - Perdido 3 - Suspenso 9 - Ganha.",
-					"minimum":1,
-					"maximum":9,
+					"maxlength":1,
 					"enum":[
 						"1",
 						"2",
@@ -435,7 +432,7 @@
 				"Comments":{
                 	"type": "string",
                     "example": "Observacao",
-                    "description": "Observacoes da Proposta",
+                    "description": "Observações da Proposta",
                     "x-totvs":[
                         {
                             "product": "protheus",
@@ -464,8 +461,7 @@
                 "ConsumerType":{
                     "type":"String",                    
                     "description":"Define o tipo de cliente da oportudade de venda. 1 - Cliente 2 - Prospect.",
-                    "minimum":1,
-                    "maximum":2,
+                    "maxlength":1,
                     "enum":[
                         "1",
                         "2"
