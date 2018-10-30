@@ -184,11 +184,11 @@
 				"governamentalInformation": {
 					"type": "object",
 					"description": "Informações Governamentais",
-					"$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/types/GovernmentalInformation_1_000.json#",
+					"$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/types/GovernmentalInformation_1_000.json#"
 				},
 				"address": {
 					"type": "object",
-					"$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/types/Address_2_000.json#",
+					"$ref": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/types/Address_2_000.json#"
 				},
 				"listofComunicationInformation": {
 					"type": "array",
