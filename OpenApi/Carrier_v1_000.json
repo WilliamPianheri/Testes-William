@@ -221,7 +221,7 @@
                 "tags": [
                     "InternalId"
                 ],
-                "summary": "Altera uma Transportadora",
+                "summary": "Altera uma transportadora",
                 "description": "Atualiza cadastro de Transportadoras conforme dados enviados na requisição",
                 "operationId": "putInternalId",                  
                 "x-totvs": {
